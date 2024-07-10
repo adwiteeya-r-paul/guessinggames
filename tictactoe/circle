@@ -1,0 +1,15 @@
+from cs1lib import *
+
+class Circle:
+    def __init__(self, x, y):
+        self.x = int(x)
+        self.y = int(y)
+
+
+
+
+    def draw(self):
+        radius = 50
+        set_stroke_color(1,0.5,0)
+        set_stroke_width(10)
+        draw_circle(100*int(self.x) + 50, 100*int(self.y) + 50, radius)
