@@ -141,14 +141,14 @@ def maindraw():
 #calling sort function for names
 clist = reading_file("world_cities.txt")
 sort(clist, compare_alpha)
-writing_file("cities_alpha.txt", clist)
+writing_file("all.txt", clist)
 
 #calling sort function for latitude
 sort(clist, compare_latitude)
-writing_file("cities_latitude.txt", clist)
+writing_file("onlylat.txt", clist)
 
 #calling sort function for population
 sort(clist, compare_population)
-writing_file("cities_population.txt", clist)
+writing_file("onlypopn.txt", clist)
 
 start_graphics(maindraw, width = W_W, height = W_H, framerate = 20, key_press=my_keypress)
